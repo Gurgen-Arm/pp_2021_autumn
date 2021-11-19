@@ -1,4 +1,4 @@
-// Copyright 2018 Nesterov Alexander
+// Copyright 2021 Hrutyunyan Gurgen
 #include <mpi.h>
 #include <iostream>
 #include <functional>

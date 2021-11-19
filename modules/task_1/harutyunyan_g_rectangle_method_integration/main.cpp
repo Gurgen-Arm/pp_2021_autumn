@@ -1,4 +1,4 @@
-// Copyright 2018 Nesterov Alexander
+// Copyright 2021 Hrutyunyan Gurgen
 #include <gtest/gtest.h>
 #include <cmath>
 #include "./rectangle_method_integration.h"
