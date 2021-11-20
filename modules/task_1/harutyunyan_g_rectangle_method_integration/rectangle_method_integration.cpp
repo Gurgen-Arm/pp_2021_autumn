@@ -34,4 +34,4 @@ double getParallelOperations(double a, double b, int n,
 	}
 	MPI_Reduce(&res_sum, &sum, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 	return sum;
-}
+} 
