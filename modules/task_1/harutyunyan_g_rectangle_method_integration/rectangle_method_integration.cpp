@@ -19,15 +19,15 @@ double getSequentialOperations(double a, double b, int n,
 
 }
 
-double getParallelOperations(double a, double b, int n, 
-	const std::function<double(double)>& f){
+double getParallelOperations(double a, double b, int n,
+	const std::function<double(double)>& f) {
 	int size, rank;
 	MPI_Comm_size(MPI_COMM_WORLD, &size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	double res_sum = 0;
 	double sum;
 	const double step = (b - a) / n;
-	for (int i = 0; i < n; i++){
+	for (int i = 0; i < n; i++) {
 		double x_1 = a + i * step;
 		double x_2 = x_1 + step / 2;
 		res_sum += step * f(x_2);
