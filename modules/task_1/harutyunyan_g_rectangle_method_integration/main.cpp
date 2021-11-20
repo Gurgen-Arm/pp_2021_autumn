@@ -1,6 +1,7 @@
-// Copyright 2021 Hrutyunyan Gurgen
+// Copyright 2021 Harutyunyan Gurgen
 #include <gtest/gtest.h>
 #include <cmath>
+#include <functional>
 #include "./rectangle_method_integration.h"
 #include <gtest-mpi-listener.hpp>
 
