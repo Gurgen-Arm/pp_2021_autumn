@@ -4,8 +4,7 @@
 #include "../../../modules/task_1/harutyunyan_g_rectangle_method_integration/rectangle_method_integration.h"
 
 double getSequentialOperations(double a, double b, int n, 
-	const std::function<double(double)>& f)
-{
+	const std::function<double(double)>& f){
 	const double step = (b - a) / n;
 	double rectangle_integration = 0;
 	for (int i= 0; i < n; i++)
@@ -21,8 +20,7 @@ double getSequentialOperations(double a, double b, int n,
 }
 
 double getParallelOperations(double a, double b, int n, 
-	const std::function<double(double)>& f)
-{
+	const std::function<double(double)>& f){
 	int size, rank;
 	MPI_Comm_size(MPI_COMM_WORLD, &size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
