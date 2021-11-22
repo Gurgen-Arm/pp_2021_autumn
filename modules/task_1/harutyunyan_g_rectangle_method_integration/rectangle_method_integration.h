@@ -1,6 +1,8 @@
-// Copyright 2021 Hrutyunyan Gurgen
+// Copyright 2021 Harutyunyan Gurgen
 #ifndef MODULES_TASK_1_HARUTYUNYAN_G_RECTANGLE_METHOD_INTEGRATION_RECTANGLE_METHOD_INTEGRATION_H_
 #define MODULES_TASK_1_HARUTYUNYAN_G_RECTANGLE_METHOD_INTEGRATION_RECTANGLE_METHOD_INTEGRATION_H_
+
+#include <functional>
 
 double getSequentialOperations(double a, double b, int n,
                                const std::function<double(double)>& f);
